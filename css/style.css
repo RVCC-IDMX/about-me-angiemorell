@@ -1,0 +1,34 @@
+body {
+    font-family: comfortaa;
+    background-color: #49DEE3;
+    color: #2763B0;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: catamaran;
+    font-size: 40pt;
+    color: #E69B83;
+}
+
+header {
+    text-align: center;
+}
+
+#icon {
+    display: inline;
+}
+
+#page-title {
+    display: inline;
+}
+
+#avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.address, footer {
+    text-align: center;
+}
