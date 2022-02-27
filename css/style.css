@@ -7,10 +7,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: catamaran;
-    font-size: 40pt;
     color: #E69B83;
 }
-
+h1 {
+    font-size: 40pt;
+}
 header {
     text-align: center;
 }
@@ -31,4 +32,15 @@ header {
 
 .address, footer {
     text-align: center;
+}
+
+#hobbies ul {
+    list-style: square;
+}
+
+#hobbies ul li {
+    color: #5A697D;
+    text-align: left;
+    text-decoration-line: underline;
+    list-style-position: outside;
 }
