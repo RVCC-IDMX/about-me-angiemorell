@@ -44,3 +44,20 @@ header {
     text-decoration-line: underline;
     list-style-position: outside;
 }
+
+#gallery {
+    border: 3px double;
+    font-size: 2em;
+    text-align: center;
+    color: #5A697D;
+    font-family: catamaran;
+    text-decoration: underline;
+}
+
+#gallery img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
