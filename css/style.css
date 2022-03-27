@@ -96,6 +96,34 @@ header {
     text-shadow:2px 2px rgba(0,0,0,.5);
 }
 
+#video {
+    text-align: center;
+    border: 3px double;
+    margin: 3rem;
+}
+
+#video figure {
+    position: relative;
+    width: 90vw;
+    height: 70vh;
+    margin: 30px auto;
+    text-align: center;
+}
+#myVideo {
+    position: absolute;
+    top: 0;
+    overflow: auto;
+    display: block;
+    height: 90%;
+    width: 100%;
+}
+#video figcaption {
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+}
+
 @media screen and (min-width: 60em) {
     figure {
         display: grid;
