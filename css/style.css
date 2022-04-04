@@ -163,3 +163,7 @@ header {
         grid-column: 1/-1;
     }
 }
+
+#formElements {
+    display: grid;
+}
