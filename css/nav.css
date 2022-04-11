@@ -11,8 +11,8 @@ html {
 
 body {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+    padding: 0em;
+    margin: 0em;
 }
 
 /* add some padding back to rest of page */
@@ -23,6 +23,15 @@ main {
 
 /* navbar */
 
+.navbar {
+   
+    background-color: rgba(45, 90, 116, 0.781);
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
 
 
 /* logo */
