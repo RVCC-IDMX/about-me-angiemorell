@@ -1,0 +1,17 @@
+#hero {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #C1A5A9;
+    padding-top: 20px;
+}
+
+#avatar {
+    /* Width */
+    max-width: 100%;
+
+    /* Height */
+    max-height: 500px;
+    /* height: auto; */
+    display: flex center;
+    border-radius: 50%;
+}

@@ -1,0 +1,37 @@
+#video {
+    color: white;
+    background-color: #467599;
+}
+
+#video h2 {
+    color: white;
+}
+
+#video .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+#video .column {
+    flex: 50%;
+    max-height: 40vh;
+    /* min-width: 100%; */
+}
+
+/* #video figure {
+    position: relative;
+} */
+
+#video iframe {
+    width: 80%;
+    min-height: 30vh;
+}
+
+@media screen and (max-width: 768px) {
+    #video .column {
+        min-width: 100%;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
