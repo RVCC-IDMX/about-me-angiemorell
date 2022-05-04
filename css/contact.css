@@ -1,0 +1,50 @@
+#formElements {
+    display: grid;
+    row-gap: .4em;
+}
+
+#contact {
+    background-color: #C1A5A9;
+}
+
+#contact-container {
+    padding: 1rem;
+    max-width: 550px;
+    margin: 0rem auto;
+}
+
+fieldset {
+    border: 3px solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: whitesmoke;
+}
+
+legend {
+    /* background-color:whitesmoke; */
+    color: whitesmoke;
+    padding: .5rem;
+    border: 3px solid;
+}
+
+#contact-container input,
+#contact-container textarea,
+#contact-container select,
+#contact-container button {
+    padding: .5em;
+    font-size: 1em;
+}
+
+#contact-container ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#contact-container button {
+    background-color: #C1A5A9;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
