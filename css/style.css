@@ -1,38 +1,43 @@
-body {
-    font-family: comfortaa;
-    background-color: #5ce9ee;
-    color: #0c1264;
+/**
+    Bio Specific CSS
+**/
+
+#bio {
+    padding: 40px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: catamaran;
-    color: #E69B83;
-}
-h1 {
-    font-size: 40pt;
-}
-header {
+#bio .bio-content {
     text-align: center;
 }
 
-/* #icon {
-    display: block;
-    margin: 0 auto;
-} */
-
-/* #page-title {
-    display: inline;
-} */
-
-#hero {
-    margin: 0 auto;
-    text-align: center;
+#bio .bio-content .content {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
 }
+
+#bio .bio-title {
+    justify-self: left;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.bio-blurb {
+    text-align: left;
+    padding: 0 3rem;
+}
+
+.bio-title,
+.bio-blurb {
+    grid-column: 2/3;
+    font-size: 1.5rem;
+}
+
 
 #hobbies {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #hobbies ul {
@@ -40,27 +45,11 @@ header {
 }
 
 #hobbies ul li {
-    color: #5A697D;
+    color: #191919;
     text-align: left;
-    text-decoration-line: underline;
+    text-decoration-line: none;
     list-style-position: outside;
-}
-
-#gallery {
-    border: 3px double;
-    font-size: 2em;
-    text-align: center;
-    color: #5A697D;
-    font-family: catamaran;
-    text-decoration: underline;
-    margin-bottom: 3rem;
-}
-
-#gallery img {
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    list-style-type: circle;
 }
 
 #lit {
@@ -92,69 +81,15 @@ header {
     margin: 0 0.1em 0.1em 0;
     padding: 0.4em;
     border: 1.5px double black;
-    background-image:radial-gradient(white, gray);
-    text-shadow:2px 2px rgba(0,0,0,.5);
+    background-image: radial-gradient(white, gray);
+    text-shadow: 2px 2px rgba(0, 0, 0, .5);
 }
 
-#video {
-    text-align: center;
-    border: 3px double;
-    margin: 3rem;
-}
-
-#video figure {
-    position: relative;
-    width: 90vw;
-    height: 70vh;
-    margin: 30px auto;
-    text-align: center;
-}
-#myVideo {
-    position: absolute;
-    top: 0;
-    overflow: auto;
-    display: block;
-    height: 90%;
-    width: 100%;
-}
-#video figcaption {
-    position: absolute;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
-}
-
-@media screen and (min-width: 60em) {
-    figure {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-
-    figcaption {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        margin-left: 1rem;
-    }
-
-    figure img {
-        width: 100%;
-    }
-
-    #lit div {
-        max-width: 100%;
-        columns: 20rem
-    }
-}
+/**
+    Footer Specific CSS
+**/
 
 @media screen and (min-width: 100em) {
-
-    #gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    
     hr {
         display: none;
     }
@@ -170,38 +105,47 @@ header {
 }
 
 #contact {
-    padding:1rem;
-    max-width:550px;
-    margin:2rem auto;
+    background-color: #C1A5A9;
 }
 
-fieldset{
+#contact-container {
+    padding: 1rem;
+    max-width: 550px;
+    margin: 0rem auto;
+}
+
+fieldset {
     border: 3px solid;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: whitesmoke;
 }
 
 legend {
-    background-color:#0c1264;
-    color:white;
-    padding:.5rem;
+    /* background-color:whitesmoke; */
+    color: whitesmoke;
+    padding: .5rem;
+    border: 3px solid;
 }
 
-#contact input, #contact textarea, #contact select, #contact button {
+#contact-container input,
+#contact-container textarea,
+#contact-container select,
+#contact-container button {
     padding: .5em;
     font-size: 1em;
 }
 
-#contact ul {
+#contact-container ul {
     list-style: none;
     padding: 0px;
 }
 
-#contact button {
-    background-color: #0c1264;
-    color: white;
-    border: 1px solid #0c1264;
+#contact-container button {
+    background-color: #C1A5A9;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
     max-width: 400px;
     width: 50%;
-    justify-self:center;
+    justify-self: center;
 }

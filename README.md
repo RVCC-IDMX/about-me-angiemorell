@@ -5,7 +5,13 @@
 # Description
 
 # Color Scheme
+Background color: #E6E8E6
+Nav bar color: #A26769
+My picture section: #C1A5A9
 
 # Citations
+Style my picture: https://www.w3schools.com/css/css3_images.asp
+Gallery: https://thebrandsmen.com/css-image-hover-effects/
+         https://www.w3schools.com/css/css3_images.asp 
 
 # License

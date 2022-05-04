@@ -1,191 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Me</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
 
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/nav.css" rel="stylesheet">
-    </head>
-    <body>
-        <!--the body element contains all content shown to a visitor-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Comfortaa:wght@700&display=swap"
+        rel="stylesheet">
 
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <img id="icon" src="./img/logo-96X96.svg" alt="Blue origami logo"> 
-                    <h1 id="page-title">Web Dev I</h1>
-                </div>
-                <div class="navbar-links">
-                    <ul>
-                        <li><a href="#bio">Bio</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#lit">Blog</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
+    <!-- CSS Styles -->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/nav.css" rel="stylesheet">
+    <link href="css/hero.css" rel="stylesheet">
+
+    <link href="css/gallery.css" rel="stylesheet">
+    <link href="css/video.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--the body element contains all content shown to a visitor-->
+
+    <button onclick="topFunction()" id="topScrollBtn" title="Go to top">Top</button>
+
+
+    <header class="header">
+        <nav id="navbar">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <div id="navitems">
+                <a class="logo">
+                    <div>
+                        <img id="icon" style="max-width: 100px;" src="./img/initials.svg" alt="Blue origami logo">
+                    </div>
+                    <p style="display: flex;" id="page-title">Web Dev I</p>
+                </a>
+                <a></a>
+                <a href="#bio">Bio</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#lit">Blog</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <img id="avatar" src="./img/My picture.JPG" alt="My Picture">
+            <div class="address">
+                <p>Angie Ramirez</p>
+                <p>Somerset, NJ</p>
+            </div>
+        </section>
+
+        <section id="bio">
+            <div class="bio-content">
+                <div class="content">
+                    <p class="bio-title">Who Am I?</p>
+                    <p class="bio-blurb">Hello and welcome! I am Angie, originally I am from Florida and recently moved
+                        here to New Jersey. I can be a quiet and timid person most of the time.
+                        However, once I get comfortable I can be the most hilarious person there is. Below, I included a
+                        few things about me that I would like to share.</p>
+
+                    <p class="bio-title">Shows I am currently enjoying: </p>
+                    <p class="bio-blurb">
+                        Who doesn't like a to sit down and relax to a good show.
+                        I love my comedies so I have to add two that really do make
+                        me laugh out loud. Brooklyn Nine-Nine and Abbott Elementary
+                        are definitly big recommendations from me. On a more serious
+                        note, while I'm not the biggest comic book fan, I do find myself
+                        enjoying both Lucifer and Moon Knight. I didn't even know Lucifer
+                        was a comic book until someone showed me. Finally, it's Yes to the Dress!
+                        With my wedding coming up I've been binging this and still can't get
+                        enough.
+                    </p>
+                    <p class="bio-title">What I am looking forward to this summer:</p>
+                    <ul class="bio-blurb">
+                        <li>Getting married in August!</li>
+                        <li>Taking my dog on the trails and to the dog park</li>
+                        <li>Reconnecting with my family</li>
+                        <li>Getting to enjoy the potlucks</li>
+                        <li>Trying at least two new activities</li>
+                    </ul>
+                    <p class="bio-title">Pets I had growing up:</p>
+                    <p class="bio-blurb">Growing up, my parents loved to care for animals, this is something they
+                        instilled in my siblings and me.
+                        Apart from dogs, we had several kinds of birds, bunnies, chickens, turkeys, iguanas, bearded
+                        dragons, and a variety of different fish.
+                        Out of all the animals, my favorite was a particular fish, the Oscar, they are very observant of
+                        their environment and love to interact with you.</p>
+                    <p class="bio-title">My goal for my education:</p>
+                    <p class="bio-blurb">This year I set a goal to go back to school, which I am proud to say that I
+                        did! Ultimately, I want to graduate with my degree in Web Development.
+                        I want not only just learn the materials, but I would also like to really understand what I am
+                        learning.</p>
+                    <p class="bio-title">Where do I see myself in my career?</p>
+                    <p class="bio-blurb">This is a subject that I struggle with myself. My hopes are that I can find a
+                        company that I can resonate with the work or service that they provide.
+                        A company that not only cares about its employees but offers an environment where you can grow
+                        and move up. </p>
+                    <p class="bio-title">What are some of my hobbies?</p>
+                    <ul class="bio-blurb">
+                        <li>Trying new recipes for cooking &amp; baking</li>
+                        <li>Puzzles</li>
+                        <li>Roadtrips</li>
+                        <li>Fishing with my dad</li>
+                        <li>Raising animals</li>
+                        <li>Binge watching TV</li>
                     </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </section>
 
-        <main>
-            <section id="hero">
-                <img id="avatar" src="./img/avataaars.png" alt="My avatar">
-                <div class="address">
-                    <p>Angie Ramirez</p>
-                    <p>Somerset, NJ</p>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <hr />
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <img src="img/carrot-cake-640w.jpg" alt="Carrot cake" />
+                        <p>My first time baking an enitre cake from scratch.</p>
+                    </div>
                 </div>
-            </section>
-
-            <section id="bio">
-                <h2>Biography:</h2>
-                <div>
-                    <p>I love my dog Luna</p>
-                    <p>I would like to get my degree in Web dev</p>
-                    <p>I am planning my wedding that will be in August</p>
-                    <p>I have had multiple pets growing up. For example: birds, chickens, turkeys, iguanas, birds, and fish. Just to name a few... </p>
-                    <p>Although I try to cook, I sadly fail a lot.</p>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/shrimp-640w.jpg" alt="Shrimp and rice" />
+                        <p>Successfully cooked shrimp and white rice</p>
+                    </div>
                 </div>
-            </section>
-            
-            <section id="hobbies">
-                <h2>Hobbies:</h2>
-
-                <ul>
-                    <li>Trying new receipes for cooking &amp; baking</li>
-                    <li>Puzzles</li>
-                    <li>Roadtrips</li>
-                    <li>Fishing with my dad</li>
-                    <li>Raising animals</li>
-                    <li>Binge watching TV</li>
-                </ul>
-            </section>
-
-            <section id="gallery">
-                <h2>Photo Gallery</h2>
-                <hr>
-                <figure>
-                    <img src="img/carrot-cake-640w.jpg" alt="Carrot cake">
-                    <figcaption>My first time baking an enitre cake from scratch.</figcaption>
-                </figure>
-                <hr>
-                <figure>
-                    <img src="img/shrimp-640w.jpg" alt="Shrimp and rice">
-                    <figcaption>Successfully cooked shrimp and white rice</figcaption>
-                </figure>
-                <hr>
-                <figure>
-                    <img src="img/chicken-640w.jpg" alt="Chicken">
-                    <figcaption>This  is my attempt at my mother's receipe, however it was not successfuly a cooking journey...</figcaption>
-                </figure>
-            </section>
-
-            <article id="lit">
-                <h2>Pride and Predjudice</h2>
-                <div>
-                    <p>During dinner, Mr. Bennet scarcely spoke at all; but when the servants were withdrawn, he thought it time to have some conversation with his guest, and therefore started a subject in which he expected him to shine, by observing that he seemed very fortunate in his patroness. Lady Catherine de Bourgh’s attention to his wishes, and consideration for his comfort, appeared very remarkable. Mr. Bennet could not have chosen better. Mr. Collins was eloquent in her praise. The subject elevated him to more than usual solemnity of manner, and with a most important aspect he protested that “he had never in his life witnessed such behaviour in a person of rank--such affability and condescension, as he had himself experienced from Lady Catherine. She had been graciously pleased to approve of both of the discourses which he had already had the honour of preaching before her. She had also asked him twice to dine at Rosings, and had sent for him only the Saturday before, to make up her pool of quadrille in the evening. Lady Catherine was reckoned proud by many people he knew, but he had never seen anything but affability in her. She had always spoken to him as she would to any other gentleman; she made not the smallest objection to his joining in the society of the neighbourhood nor to his leaving the parish occasionally for a week or two, to visit his relations. She had even condescended to advise him to marry as soon as he could, provided he chose with discretion; and had once paid him a visit in his humble parsonage, where she had perfectly approved all the alterations he had been making, and had even vouchsafed to suggest some herself--some shelves in the closet up stairs.”</p>
-
-                    <p>"That is all very proper and civil, I am sure,” said Mrs. Bennet, “and I dare say she is a very agreeable woman. It is a pity that great ladies in general are not more like her. Does she live near you, sir?”</p>
-
-                    <p>"The garden in which stands my humble abode is separated only by a lane from Rosings Park, her ladyship’s residence.”</p>
-
-                    <p>"I think you said she was a widow, sir? Has she any family?”</p>
-
-                    <p>"She has only one daughter, the heiress of Rosings, and of very extensive property.”</p>
-
-                    <p>"Ah!” said Mrs. Bennet, shaking her head, “then she is better off than many girls. And what sort of young lady is she? Is she handsome?”</p>
-
-                    <p>"She is a most charming young lady indeed. Lady Catherine herself says that, in point of true beauty, Miss de Bourgh is far superior to the handsomest of her sex, because there is that in her features which marks the young lady of distinguished birth. She is unfortunately of a sickly constitution, which has prevented her from making that progress in many accomplishments which she could not have otherwise failed of, as I am informed by the lady who superintended her education, and who still resides with them. But she is perfectly amiable, and often condescends to drive by my humble abode in her little phaeton and ponies.”</p>
-
-                    <p>"Has she been presented? I do not remember her name among the ladies at court.”</p>
+                <div class="column">
+                    <div class="card">
+                        <img src="img/chicken-640w.jpg" alt="Chicken" />
+                        <p>This is my attempt at my mother's receipe, however it was not successfuly a cooking
+                            journey...</p>
+                    </div>
                 </div>
-            </article>
+        </section>
 
-            <section id="video">
-                <h2>A short Video:</h2>
-                <figure>
-                <iframe 
-                    id="myVideo" 
-                    width="560" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/bRLFs41mP7I" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-                    <figcaption>Nick and Luna sitting on the porch</figcaption>
-                </figure>
+        <article id="lit">
+            <h2>Pride and Predjudice</h2>
+            <div>
+                <p>During dinner, Mr. Bennet scarcely spoke at all; but when the servants were withdrawn, he thought it
+                    time to have some conversation with his guest, and therefore started a subject in which he expected
+                    him to shine, by observing that he seemed very fortunate in his patroness. Lady Catherine de
+                    Bourgh’s attention to his wishes, and consideration for his comfort, appeared very remarkable. Mr.
+                    Bennet could not have chosen better. Mr. Collins was eloquent in her praise. The subject elevated
+                    him to more than usual solemnity of manner, and with a most important aspect he protested that “he
+                    had never in his life witnessed such behaviour in a person of rank--such affability and
+                    condescension, as he had himself experienced from Lady Catherine. She had been graciously pleased to
+                    approve of both of the discourses which he had already had the honour of preaching before her. She
+                    had also asked him twice to dine at Rosings, and had sent for him only the Saturday before, to make
+                    up her pool of quadrille in the evening. Lady Catherine was reckoned proud by many people he knew,
+                    but he had never seen anything but affability in her. She had always spoken to him as she would to
+                    any other gentleman; she made not the smallest objection to his joining in the society of the
+                    neighbourhood nor to his leaving the parish occasionally for a week or two, to visit his relations.
+                    She had even condescended to advise him to marry as soon as he could, provided he chose with
+                    discretion; and had once paid him a visit in his humble parsonage, where she had perfectly approved
+                    all the alterations he had been making, and had even vouchsafed to suggest some herself--some
+                    shelves in the closet up stairs.”</p>
 
-            </section>
+                <p>"That is all very proper and civil, I am sure,” said Mrs. Bennet, “and I dare say she is a very
+                    agreeable woman. It is a pity that great ladies in general are not more like her. Does she live near
+                    you, sir?”</p>
 
-            <section id="contact">
+                <p>"The garden in which stands my humble abode is separated only by a lane from Rosings Park, her
+                    ladyship’s residence.”</p>
 
-                <h2>Contact Us:</h2>
-                
+                <p>"I think you said she was a widow, sir? Has she any family?”</p>
+
+                <p>"She has only one daughter, the heiress of Rosings, and of very extensive property.”</p>
+
+                <p>"Ah!” said Mrs. Bennet, shaking her head, “then she is better off than many girls. And what sort of
+                    young lady is she? Is she handsome?”</p>
+
+                <p>"She is a most charming young lady indeed. Lady Catherine herself says that, in point of true beauty,
+                    Miss de Bourgh is far superior to the handsomest of her sex, because there is that in her features
+                    which marks the young lady of distinguished birth. She is unfortunately of a sickly constitution,
+                    which has prevented her from making that progress in many accomplishments which she could not have
+                    otherwise failed of, as I am informed by the lady who superintended her education, and who still
+                    resides with them. But she is perfectly amiable, and often condescends to drive by my humble abode
+                    in her little phaeton and ponies.”</p>
+
+                <p>"Has she been presented? I do not remember her name among the ladies at court.”</p>
+            </div>
+        </article>
+
+        <section id="video">
+            <h2>A Short Video:</h2>
+            <hr />
+            <div class="row">
+                <div class="column">
+                    <div class="iframe">
+                        <figure>
+                            <iframe id="myVideo" src="https://www.youtube.com/embed/bRLFs41mP7I"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </figure>
+                    </div>
+                </div>
+                <div class="column" style="text-align: center;">
+                    No matter the type of day we have, these two are inseperable
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
                 <form id="contactForm" name="contactForm" method="post" data-netlify="true">
 
                     <fieldset>
                         <legend>Contact Form</legend>
 
                         <div id="formElements">
-                       
-                        <label for="name">Name (required)</label>
-                        <input type="text" id="name" name="name" required>
 
-                        <label for="email">Email (required)</label>
-                        <input type="email" id="email" name="email"required>
+                            <label for="name">Name (required)</label>
+                            <input type="text" id="name" name="name" required>
 
-                        <label for="phone">Phone (optional)</label>
-                        <input type="tel" id="phone" name="phone">
+                            <label for="email">Email (required)</label>
+                            <input type="email" id="email" name="email" required>
 
-                        <label for="phoneType">Phone type (optional)</label>
-                        <select id="phoneType" name="phonetype">
-                            <option value=""selected>Select phone type</option>
-                            <option value="Mobile">Mobile</option>
-                            <option value="Work">Work</option>
-                            <option value="Home">Home</option>
-                        </select>
+                            <label for="phone">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone">
 
-                        <label for="message">Message (optional)</label>
-                        <textarea id="message" name="message" rows="8"></textarea>
+                            <label for="phoneType">Phone type (optional)</label>
+                            <select id="phoneType" name="phonetype">
+                                <option value="" selected>Select phone type</option>
+                                <option value="Mobile">Mobile</option>
+                                <option value="Work">Work</option>
+                                <option value="Home">Home</option>
+                            </select>
 
-                        <fieldset>
-                            <legend>Would you like a reply?</legend>
-                            <ul>
-                                <li>
-                                    <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
-                                    <label for="message-yes">
-                                    Yes a reply would nice.</label>
-                                </li>
-                                
-                                <li>
-                                    <input type="radio" id="message-no" name="reply" value="No, reply please" checked>
-                                    <label for="message-no">No, thanks.</label>
-                                </li>
-                            </ul>
+                            <label for="message">Message (optional)</label>
+                            <textarea id="message" name="message" rows="8"></textarea>
 
-                        
-                        </fieldset>
-                        <button type="submit">Send</button>
+                            <fieldset>
+                                <legend>Would you like a reply?</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="message-yes" name="reply" value="Yes a reply please.">
+                                        <label for="message-yes">
+                                            Yes a reply would nice.</label>
+                                    </li>
 
-                    </div>
-
+                                    <li>
+                                        <input type="radio" id="message-no" name="reply" value="No, reply please"
+                                            checked>
+                                        <label for="message-no">No, thanks.</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                            <button type="submit">Send</button>
+                        </div>
                     </fieldset>
-
                 </form>
-            
-           
-            </section>
-        
-        
-        </main>
-       
-        <footer>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>
             © 2022 - Angie Ramirez
-        </footer>
-    </body>
+        </p>
+        <a href="https://github.com/angiemorell" alt="Angie Ramirez Github URL">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" style="fill: white;">
+                <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+        </a>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/scrollToTop.js"></script>
+</body>
+
 </html>
